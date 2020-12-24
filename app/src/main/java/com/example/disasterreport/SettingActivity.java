@@ -1,5 +1,6 @@
 package com.example.disasterreport;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -14,5 +15,10 @@ public class SettingActivity extends AppCompatActivity {
     }
     public static class EarthquakePreferenceFragment extends PreferenceFragment{
 
+        @Override
+        public void onCreate(@Nullable Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            addPreferencesFromResource(R.xml.settings_main);
+        }
     }
 }
