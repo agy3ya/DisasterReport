@@ -11,10 +11,13 @@ import android.app.LoaderManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.Loader;
+import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -30,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     private RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
     private MainAdapter mAdapter;
-    private static final String USGS_REQUEST_URL=  "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&eventtype=earthquake&orderby=time&minmag=5&limit=20";
+    private static final String USGS_REQUEST_URL=  "https://earthquake.usgs.gov/fdsnws/event/1/query";
     Context context;
     private static final int EARTHQUAKE_LOADER_ID = 1;
     private static final String LOG_TAG= MainActivity.class.getName();
@@ -67,7 +70,19 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     @Override
     public Loader<ArrayList<Earthquakes>> onCreateLoader(int id, Bundle args) {
         Log.i(LOG_TAG,"TEST: OnCreate called");
-        return new EarthquakeLoader(this,USGS_REQUEST_URL);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+        String minMagnitude = sharedPreferences.getString(
+                getString(R.string.settings_min_magnitude_key),
+                getString(R.string.settings_min_magnitude_default));
+        Uri baseUri = Uri.parse(USGS_REQUEST_URL);
+        Uri.Builder uriBuilder = baseUri.buildUpon();
+
+        uriBuilder.appendQueryParameter("format","geojson");
+        uriBuilder.appendQueryParameter("limit","10");
+        uriBuilder.appendQueryParameter("minmag",minMagnitude);
+        uriBuilder.appendQueryParameter("orderby","time");
+
+        return new EarthquakeLoader(this,uriBuilder.toString());
     }
 
     @Override

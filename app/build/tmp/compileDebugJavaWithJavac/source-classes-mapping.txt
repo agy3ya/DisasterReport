@@ -8,6 +8,9 @@ com/example/disasterreport/MainAdapter.java
  com.example.disasterreport.MainAdapter$ViewHolder
 com/example/disasterreport/Earthquakes.java
  com.example.disasterreport.Earthquakes
+com/example/disasterreport/SettingActivity.java
+ com.example.disasterreport.SettingActivity
+ com.example.disasterreport.SettingActivity$EarthquakePreferenceFragment
 com/example/disasterreport/BuildConfig.java
  com.example.disasterreport.BuildConfig
 com/example/disasterreport/MainActivity.java

@@ -44,8 +44,16 @@
         "source": "E:\\Programs\\Android\\DisasterReport\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "E:\\Programs\\Android\\DisasterReport\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_24.xml.flat",
+        "source": "E:\\Programs\\Android\\DisasterReport\\app\\src\\main\\res\\drawable\\ic_baseline_24.xml"
+    },
+    {
         "merged": "E:\\Programs\\Android\\DisasterReport\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
         "source": "E:\\Programs\\Android\\DisasterReport\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\Programs\\Android\\DisasterReport\\app\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
+        "source": "E:\\Programs\\Android\\DisasterReport\\app\\src\\main\\res\\menu\\main.xml"
     },
     {
         "merged": "E:\\Programs\\Android\\DisasterReport\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
@@ -60,11 +68,19 @@
         "source": "E:\\Programs\\Android\\DisasterReport\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "E:\\Programs\\Android\\DisasterReport\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_setting.xml.flat",
+        "source": "E:\\Programs\\Android\\DisasterReport\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
         "merged": "E:\\Programs\\Android\\DisasterReport\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "E:\\Programs\\Android\\DisasterReport\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
         "merged": "E:\\Programs\\Android\\DisasterReport\\app\\build\\intermediates\\res\\merged\\debug\\layout_text_earthquakes_item.xml.flat",
         "source": "E:\\Programs\\Android\\DisasterReport\\app\\src\\main\\res\\layout\\text_earthquakes_item.xml"
+    },
+    {
+        "merged": "E:\\Programs\\Android\\DisasterReport\\app\\build\\intermediates\\res\\merged\\debug\\xml_settings_main.xml.flat",
+        "source": "E:\\Programs\\Android\\DisasterReport\\app\\src\\main\\res\\xml\\settings_main.xml"
     }
 ]
