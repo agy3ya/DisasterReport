@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Disaster Report</string>
+    <string name="example_text">example text</string>
+    <string name="_12_dec_2020">12 Dec, 2020</string>
+    <string name="new_delhi">New Delhi</string>
+    <string name="magnitude_example">4.2</string>
+    <string name="_3_00pm">3:00pm</string>
+    <string name="locationoffset">30km S of</string>
+    <string name="near_the">Near the</string>
+    <string name="no_earthquakes">No earthquakes found.</string>
+    <string name="no_internet_connection">No internet connection.</string>
+</resources>
