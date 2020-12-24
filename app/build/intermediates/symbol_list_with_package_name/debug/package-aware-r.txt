@@ -45,6 +45,8 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array settings_order_by_labels
+array settings_order_by_values
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -2207,6 +2209,13 @@ string settings_menu_item
 string settings_min_magnitude_default
 string settings_min_magnitude_key
 string settings_min_magnitude_label
+string settings_order_by_default
+string settings_order_by_key
+string settings_order_by_label
+string settings_order_by_magnitude_label
+string settings_order_by_magnitude_value
+string settings_order_by_most_recent_label
+string settings_order_by_most_recent_value
 string settings_title
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat

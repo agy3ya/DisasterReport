@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <string-array name="settings_order_by_labels">
+        <item>@string/settings_order_by_magnitude_label</item>
+        <item>@string/settings_order_by_most_recent_label</item>
+    </string-array>
+    <string-array name="settings_order_by_values">
+        <item>@string/settings_order_by_magnitude_value</item>
+        <item>@string/settings_order_by_most_recent_value</item>
+    </string-array>
     <attr format="reference" name="animate_relativeTo"/>
     <attr format="reference" name="appBarLayoutStyle"/>
     <attr format="enum" name="arcMode">
@@ -1056,6 +1064,13 @@
     <string name="settings_min_magnitude_default" translatable="false">6</string>
     <string name="settings_min_magnitude_key" translatable="false">min_magnitude</string>
     <string name="settings_min_magnitude_label">Minimum Magnitude</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_magnitude_value</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_magnitude_label">Magnitude</string>
+    <string name="settings_order_by_magnitude_value" translatable="false">magnitude</string>
+    <string name="settings_order_by_most_recent_label">Most Recent</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">time</string>
     <string name="settings_title">Earthquake Settings</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
